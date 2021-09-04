@@ -23,6 +23,80 @@
     </message>
 </context>
 <context>
+    <name>PlayfairWidget</name>
+    <message>
+        <location filename="view/playfairwidget.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="57"/>
+        <source>Playfair Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="89"/>
+        <source>Text from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="133"/>
+        <source> as </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="186"/>
+        <source>File input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="193"/>
+        <location filename="view/playfairwidget.ui" line="213"/>
+        <source>Browse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="203"/>
+        <source>File output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="232"/>
+        <source>Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="265"/>
+        <source>Plaintext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="283"/>
+        <source>Whitespaces, symbols, etc. have been removed from your plaintext.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="317"/>
+        <source>Ciphertext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="333"/>
+        <source>Render ciphertext without spaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="363"/>
+        <source>Encrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/playfairwidget.ui" line="370"/>
+        <source>Decrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <location filename="src/vigenerefulltabledialog.cpp" line="36"/>
@@ -315,7 +389,6 @@
     <message>
         <location filename="view/vigenere256asciiwidget.ui" line="186"/>
         <source>Key from</source>
-        <oldsource>Key</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -326,13 +399,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="view/vigenere256asciiwidget.ui" line="239"/>
-        <source>File input</source>
+        <location filename="view/vigenere256asciiwidget.ui" line="222"/>
+        <source>File output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="view/vigenere256asciiwidget.ui" line="222"/>
-        <source>File output</source>
+        <location filename="view/vigenere256asciiwidget.ui" line="239"/>
+        <source>File input</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

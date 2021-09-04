@@ -1,13 +1,16 @@
-#include <include/vigenererunningkeywidget.h>
-#include "ui_vigenererunningkeywidget.h"
+#include <include/playfairwidget.h>
+#include "ui_playfairwidget.h"
 
 #include <QFileDialog>
 #include <QMessageBox>
 #include <fstream>
+#include <iostream>
 
 #include <include/cipher/util.h>
 
-VigenereRunningKeyWidget::VigenereRunningKeyWidget(QWidget *parent) : QWidget(parent), ui(new Ui::VigenereRunningKeyWidget)
+PlayfairWidget::PlayfairWidget(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::PlayfairWidget)
 {
     ui->setupUi(this);
 
@@ -25,32 +28,33 @@ VigenereRunningKeyWidget::VigenereRunningKeyWidget(QWidget *parent) : QWidget(pa
     cipher = nullptr;
 }
 
-VigenereRunningKeyWidget::~VigenereRunningKeyWidget() {
+PlayfairWidget::~PlayfairWidget()
+{
     delete ui;
     if (cipher != nullptr) delete cipher;
 }
 
-void VigenereRunningKeyWidget::encrypt(std::string key, std::string plainText)
+void PlayfairWidget::encrypt(std::string key, std::string plainText)
 {
     if (cipher != nullptr) delete cipher;
-    cipher = new VigenereRunningKeyCipher(key);
+    cipher = new PlayfairCipher(key);
 
     cipher->setPlainText(plainText);
 
     cipher->encrypt();
 }
 
-void VigenereRunningKeyWidget::decrypt(std::string key, std::string cipherText)
+void PlayfairWidget::decrypt(std::string key, std::string cipherText)
 {
     if (cipher != nullptr) delete cipher;
-    cipher = new VigenereRunningKeyCipher(key);
+    cipher = new PlayfairCipher(key);
 
     cipher->setCipherText(cipherText);
 
     cipher->decrypt();
 }
 
-std::string VigenereRunningKeyWidget::readFile(std::string fileName)
+std::string PlayfairWidget::readFile(std::string fileName)
 {
     std::ifstream fileInput(fileName.c_str());
     std::ostringstream buffer;
@@ -64,7 +68,7 @@ std::string VigenereRunningKeyWidget::readFile(std::string fileName)
     return content;
 }
 
-void VigenereRunningKeyWidget::handleFileOutput(std::string fileName, std::string content)
+void PlayfairWidget::handleFileOutput(std::string fileName, std::string content)
 {
     std::ofstream fileOutput(fileName);
 
@@ -73,7 +77,7 @@ void VigenereRunningKeyWidget::handleFileOutput(std::string fileName, std::strin
     fileOutput.close();
 }
 
-void VigenereRunningKeyWidget::on_encryptButton_clicked()
+void PlayfairWidget::on_encryptButton_clicked()
 {
     ui->plainTextWarningLabel->setVisible(false);
 
@@ -82,7 +86,7 @@ void VigenereRunningKeyWidget::on_encryptButton_clicked()
         std::string key = ui->keyTexyBox->text().toLatin1().data();
 
         CipherUtil::checkPlainText(plainText);
-        CipherUtil::checkRunningKey(key, plainText);
+        CipherUtil::checkKey(key);
 
         if (!(CipherUtil::isPlainTextAlphanumeric(plainText))) {
             ui->plainTextWarningLabel->setVisible(true);
@@ -119,7 +123,7 @@ void VigenereRunningKeyWidget::on_encryptButton_clicked()
     }
 }
 
-void VigenereRunningKeyWidget::on_decryptButton_clicked()
+void PlayfairWidget::on_decryptButton_clicked()
 {
     ui->plainTextWarningLabel->setVisible(false);
 
@@ -128,14 +132,14 @@ void VigenereRunningKeyWidget::on_decryptButton_clicked()
         std::string key = ui->keyTexyBox->text().toLatin1().data();
 
         CipherUtil::checkCipherText(cipherText);
-        CipherUtil::checkRunningKey(key, cipherText);
+        CipherUtil::checkKey(key);
 
         cipherText = CipherUtil::prepareCipherText(cipherText);
         key = CipherUtil::prepareKey(key);
 
         decrypt(key, cipherText);
 
-        std::string convertedPlainText = cipher->getPlainText();
+        std::string convertedPlainText = cipher->getPlainText(false);
         ui->plainTextBox->setPlainText(QString(convertedPlainText.c_str()));
 
         if (ui->sourceComboBox->currentIndex() == 1) {  // Source and dest is file
@@ -153,7 +157,7 @@ void VigenereRunningKeyWidget::on_decryptButton_clicked()
     }
 }
 
-void VigenereRunningKeyWidget::on_renderCipherTextBox_stateChanged(int arg1)
+void PlayfairWidget::on_renderCipherTextBox_stateChanged(int arg1)
 {
     switch(arg1) {
         case 2: {
@@ -167,7 +171,7 @@ void VigenereRunningKeyWidget::on_renderCipherTextBox_stateChanged(int arg1)
     }
 }
 
-void VigenereRunningKeyWidget::on_sourceComboBox_currentIndexChanged(int index)
+void PlayfairWidget::on_sourceComboBox_currentIndexChanged(int index)
 {
     switch(index) {
         case 0: {
@@ -190,7 +194,7 @@ void VigenereRunningKeyWidget::on_sourceComboBox_currentIndexChanged(int index)
 }
 
 
-void VigenereRunningKeyWidget::on_browseFileInputButton_clicked()
+void PlayfairWidget::on_browseFileInputButton_clicked()
 {
     QFileDialog *dialog = new QFileDialog;
 
@@ -231,7 +235,7 @@ void VigenereRunningKeyWidget::on_browseFileInputButton_clicked()
 }
 
 
-void VigenereRunningKeyWidget::on_browseFileOutputButton_clicked()
+void PlayfairWidget::on_browseFileOutputButton_clicked()
 {
     QFileDialog *dialog = new QFileDialog;
 
@@ -242,4 +246,3 @@ void VigenereRunningKeyWidget::on_browseFileOutputButton_clicked()
 
     delete dialog;
 }
-

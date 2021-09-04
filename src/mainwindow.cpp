@@ -4,14 +4,14 @@
 #include <QVBoxLayout>
 #include <QDebug>
 
-#include <include/vigenere256asciiwidget.h>
+#include <include/playfairwidget.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    currentWidget = new Vigenere256AsciiWidget();
+    currentWidget = new PlayfairWidget();
     ui->widgetContainerLayout->addWidget(currentWidget);
 
     // Set treeview model

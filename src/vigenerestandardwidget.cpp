@@ -78,8 +78,8 @@ void VigenereStandardWidget::on_encryptButton_clicked()
     ui->plainTextWarningLabel->setVisible(false);
 
     try {
-        std::string plainText = ui->plainTextBox->toPlainText().toStdString();
-        std::string key = ui->keyTexyBox->text().toStdString();
+        std::string plainText = ui->plainTextBox->toPlainText().toLatin1().data();
+        std::string key = ui->keyTexyBox->text().toLatin1().data();
 
         CipherUtil::checkPlainText(plainText);
         CipherUtil::checkKey(key);
@@ -105,7 +105,7 @@ void VigenereStandardWidget::on_encryptButton_clicked()
         ui->cipherTextBox->setPlainText(QString(convertedCipherText.c_str()));
 
         if (ui->sourceComboBox->currentIndex() == 1) {  // Source and dest is file
-            std::string fileOutputName = ui->fileOutputTextBox->text().toStdString();
+            std::string fileOutputName = ui->fileOutputTextBox->text().toLatin1().data();
             if (fileOutputName.empty()) {
                 fileOutputName = ui->fileInputTextBox->text().toStdString() + "_ENCRYPTED";
             }
@@ -124,8 +124,8 @@ void VigenereStandardWidget::on_decryptButton_clicked()
     ui->plainTextWarningLabel->setVisible(false);
 
     try {
-        std::string cipherText = ui->cipherTextBox->toPlainText().toStdString();
-        std::string key = ui->keyTexyBox->text().toStdString();
+        std::string cipherText = ui->cipherTextBox->toPlainText().toLatin1().data();
+        std::string key = ui->keyTexyBox->text().toLatin1().data();
 
         CipherUtil::checkCipherText(cipherText);
         CipherUtil::checkKey(key);
@@ -139,7 +139,7 @@ void VigenereStandardWidget::on_decryptButton_clicked()
         ui->plainTextBox->setPlainText(QString(convertedPlainText.c_str()));
 
         if (ui->sourceComboBox->currentIndex() == 1) {  // Source and dest is file
-            std::string fileOutputName = ui->fileOutputTextBox->text().toStdString();
+            std::string fileOutputName = ui->fileOutputTextBox->text().toLatin1().data();
             if (fileOutputName.empty()) {
                 fileOutputName = ui->fileInputTextBox->text().toStdString() + "_DECRYPTED";
             }
@@ -196,7 +196,7 @@ void VigenereStandardWidget::on_browseFileInputButton_clicked()
 
     QString fileName = dialog->getOpenFileName();
     if (!fileName.isNull()) {
-        std::string content = readFile(fileName.toStdString());
+        std::string content = readFile(fileName.toLatin1().data());
         int textType = ui->textTypeComboBox->currentIndex();
 
         try {
