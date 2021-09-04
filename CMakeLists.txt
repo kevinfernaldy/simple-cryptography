@@ -18,13 +18,22 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
 set(TS_FILES ClassicCryptography_id_ID.ts)
 
 set(PROJECT_SOURCES
+        include/mainwindow.h
+        include/vigenerestandardwidget.h
+        include/viginerefullwidget.h
         src/main.cpp
         src/mainwindow.cpp
-        include/mainwindow.h
-        view/mainwindow.ui
-        include/vigenerestandardwidget.h
         src/vigenerestandardwidget.cpp
+        src/viginerefullwidget.cpp
+        view/mainwindow.ui
         view/vigenerestandardwidget.ui
+        view/viginerefullwidget.ui
+        include/cipher/vigenere/Vigenere.h
+        include/cipher/vigenere/VigenereStandard.h
+        include/cipher/util.h
+        src/cipher/vigenere/VigenereStandard.cpp
+        src/cipher/vigenere/Vigenere.cpp
+        src/cipher/util.cpp
         ${TS_FILES}
 )
 

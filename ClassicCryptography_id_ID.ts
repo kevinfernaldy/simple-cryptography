@@ -40,27 +40,106 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="view/vigenerestandardwidget.ui" line="123"/>
-        <source>Plaintext from</source>
+        <location filename="view/vigenerestandardwidget.ui" line="120"/>
+        <source>Text from</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="view/vigenerestandardwidget.ui" line="154"/>
-        <source>Plaintext</source>
+        <location filename="view/vigenerestandardwidget.ui" line="164"/>
+        <source> as </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="view/vigenerestandardwidget.ui" line="188"/>
-        <source>TextLabel</source>
+        <location filename="view/vigenerestandardwidget.ui" line="220"/>
+        <source>File input</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="view/vigenerestandardwidget.ui" line="227"/>
-        <source>Encrypt</source>
+        <location filename="view/vigenerestandardwidget.ui" line="244"/>
+        <source>Browse</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="view/vigenerestandardwidget.ui" line="234"/>
+        <source>File output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenerestandardwidget.ui" line="263"/>
+        <source>Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenerestandardwidget.ui" line="296"/>
+        <source>Plaintext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenerestandardwidget.ui" line="314"/>
+        <source>Whitespaces, symbols, etc. have been removed from your plaintext.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenerestandardwidget.ui" line="348"/>
+        <source>Ciphertext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenerestandardwidget.ui" line="364"/>
+        <source>Render ciphertext without spaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenerestandardwidget.ui" line="394"/>
+        <source>Encrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenerestandardwidget.ui" line="401"/>
+        <source>Decrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ViginereFullWidget</name>
+    <message>
+        <location filename="view/viginerefullwidget.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/viginerefullwidget.ui" line="57"/>
+        <source>Vigenère Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/viginerefullwidget.ui" line="70"/>
+        <source>Full, 26 Alphabet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/viginerefullwidget.ui" line="108"/>
+        <source>Plaintext from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/viginerefullwidget.ui" line="139"/>
+        <source>Plaintext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/viginerefullwidget.ui" line="173"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/viginerefullwidget.ui" line="212"/>
+        <source>Encrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/viginerefullwidget.ui" line="219"/>
         <source>Decrypt</source>
         <translation type="unfinished"></translation>
     </message>
