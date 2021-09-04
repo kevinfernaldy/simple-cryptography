@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QStandardItemModel>
-#include "vigenerestandardwidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

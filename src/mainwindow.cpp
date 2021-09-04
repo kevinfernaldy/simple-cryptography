@@ -4,12 +4,14 @@
 #include <QVBoxLayout>
 #include <QDebug>
 
+#include <include/vigenererunningkeywidget.h>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    currentWidget = new VigenereStandardWidget();
+    currentWidget = new VigenereRunningKeyWidget();
     ui->widgetContainerLayout->addWidget(currentWidget);
 
     // Set treeview model

@@ -20,19 +20,21 @@ set(TS_FILES ClassicCryptography_id_ID.ts)
 set(PROJECT_SOURCES
         include/mainwindow.h
         include/vigenerestandardwidget.h
-        include/viginerefullwidget.h
+        include/vigenererunningkeywidget.h
         src/main.cpp
         src/mainwindow.cpp
         src/vigenerestandardwidget.cpp
-        src/viginerefullwidget.cpp
+        src/vigenererunningkeywidget.cpp
         view/mainwindow.ui
         view/vigenerestandardwidget.ui
-        view/viginerefullwidget.ui
+        view/vigenererunningkeywidget.ui
         include/cipher/vigenere/Vigenere.h
         include/cipher/vigenere/VigenereStandard.h
+        include/cipher/vigenere/VigenereRunningKey.h
         include/cipher/util.h
         src/cipher/vigenere/VigenereStandard.cpp
         src/cipher/vigenere/Vigenere.cpp
+        src/cipher/vigenere/VigenereRunningKey.cpp
         src/cipher/util.cpp
         ${TS_FILES}
 )

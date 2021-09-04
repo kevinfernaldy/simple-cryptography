@@ -47,6 +47,17 @@ void CipherUtil::checkKey(std::string key)
     }
 }
 
+void CipherUtil::checkRunningKey(std::string key, std::string text)
+{
+    if (!(key.length() > 0)) {
+        throw std::runtime_error("Key length is zero");
+    } else if (!(std::regex_match(key, std::regex("^([a-zA-Z])*$")))) {
+        throw std::runtime_error("Key is invalid. Only alphabet letters are allowed");
+    } else if (key.length() < text.length()) {
+        throw std::runtime_error("Key length must be equal or greater than plain/ciphertext");
+    }
+}
+
 void CipherUtil::checkPlainText(std::string plainText)
 {
     if (!(plainText.length() > 0)) {

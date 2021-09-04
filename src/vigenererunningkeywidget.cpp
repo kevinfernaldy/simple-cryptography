@@ -1,5 +1,5 @@
-#include "../include/vigenerestandardwidget.h"
-#include "./ui_vigenerestandardwidget.h"
+#include <include/vigenererunningkeywidget.h>
+#include "ui_vigenererunningkeywidget.h"
 
 #include <QFileDialog>
 #include <QMessageBox>
@@ -7,7 +7,7 @@
 
 #include <include/cipher/util.h>
 
-VigenereStandardWidget::VigenereStandardWidget(QWidget *parent) : QWidget(parent), ui(new Ui::VigenereStandardWidget)
+VigenereRunningKeyWidget::VigenereRunningKeyWidget(QWidget *parent) : QWidget(parent), ui(new Ui::VigenereRunningKeyWidget)
 {
     ui->setupUi(this);
 
@@ -25,32 +25,32 @@ VigenereStandardWidget::VigenereStandardWidget(QWidget *parent) : QWidget(parent
     cipher = nullptr;
 }
 
-VigenereStandardWidget::~VigenereStandardWidget() {
+VigenereRunningKeyWidget::~VigenereRunningKeyWidget() {
     delete ui;
     if (cipher != nullptr) delete cipher;
 }
 
-void VigenereStandardWidget::encrypt(std::string key, std::string plainText)
+void VigenereRunningKeyWidget::encrypt(std::string key, std::string plainText)
 {
     if (cipher != nullptr) delete cipher;
-    cipher = new VigenereStandardCipher(key);
+    cipher = new VigenereRunningKeyCipher(key);
 
     cipher->setPlainText(plainText);
 
     cipher->encrypt();
 }
 
-void VigenereStandardWidget::decrypt(std::string key, std::string cipherText)
+void VigenereRunningKeyWidget::decrypt(std::string key, std::string cipherText)
 {
     if (cipher != nullptr) delete cipher;
-    cipher = new VigenereStandardCipher(key);
+    cipher = new VigenereRunningKeyCipher(key);
 
     cipher->setCipherText(cipherText);
 
     cipher->decrypt();
 }
 
-std::string VigenereStandardWidget::readFile(std::string fileName)
+std::string VigenereRunningKeyWidget::readFile(std::string fileName)
 {
     std::ifstream fileInput(fileName.c_str());
     std::ostringstream buffer;
@@ -64,7 +64,7 @@ std::string VigenereStandardWidget::readFile(std::string fileName)
     return content;
 }
 
-void VigenereStandardWidget::handleFileOutput(std::string fileName, std::string content)
+void VigenereRunningKeyWidget::handleFileOutput(std::string fileName, std::string content)
 {
     std::ofstream fileOutput(fileName);
 
@@ -73,7 +73,7 @@ void VigenereStandardWidget::handleFileOutput(std::string fileName, std::string 
     fileOutput.close();
 }
 
-void VigenereStandardWidget::on_encryptButton_clicked()
+void VigenereRunningKeyWidget::on_encryptButton_clicked()
 {
     ui->plainTextWarningLabel->setVisible(false);
 
@@ -82,7 +82,7 @@ void VigenereStandardWidget::on_encryptButton_clicked()
         std::string key = ui->keyTexyBox->text().toStdString();
 
         CipherUtil::checkPlainText(plainText);
-        CipherUtil::checkKey(key);
+        CipherUtil::checkRunningKey(key, plainText);
 
         if (!(CipherUtil::isPlainTextAlphanumeric(plainText))) {
             ui->plainTextWarningLabel->setVisible(true);
@@ -119,7 +119,7 @@ void VigenereStandardWidget::on_encryptButton_clicked()
     }
 }
 
-void VigenereStandardWidget::on_decryptButton_clicked()
+void VigenereRunningKeyWidget::on_decryptButton_clicked()
 {
     ui->plainTextWarningLabel->setVisible(false);
 
@@ -128,7 +128,7 @@ void VigenereStandardWidget::on_decryptButton_clicked()
         std::string key = ui->keyTexyBox->text().toStdString();
 
         CipherUtil::checkCipherText(cipherText);
-        CipherUtil::checkKey(key);
+        CipherUtil::checkRunningKey(key, cipherText);
 
         cipherText = CipherUtil::prepareCipherText(cipherText);
         key = CipherUtil::prepareKey(key);
@@ -153,7 +153,7 @@ void VigenereStandardWidget::on_decryptButton_clicked()
     }
 }
 
-void VigenereStandardWidget::on_renderCipherTextBox_stateChanged(int arg1)
+void VigenereRunningKeyWidget::on_renderCipherTextBox_stateChanged(int arg1)
 {
     switch(arg1) {
         case 2: {
@@ -167,7 +167,7 @@ void VigenereStandardWidget::on_renderCipherTextBox_stateChanged(int arg1)
     }
 }
 
-void VigenereStandardWidget::on_sourceComboBox_currentIndexChanged(int index)
+void VigenereRunningKeyWidget::on_sourceComboBox_currentIndexChanged(int index)
 {
     switch(index) {
         case 0: {
@@ -190,7 +190,7 @@ void VigenereStandardWidget::on_sourceComboBox_currentIndexChanged(int index)
 }
 
 
-void VigenereStandardWidget::on_browseFileInputButton_clicked()
+void VigenereRunningKeyWidget::on_browseFileInputButton_clicked()
 {
     QFileDialog *dialog = new QFileDialog;
 
@@ -231,7 +231,7 @@ void VigenereStandardWidget::on_browseFileInputButton_clicked()
 }
 
 
-void VigenereStandardWidget::on_browseFileOutputButton_clicked()
+void VigenereRunningKeyWidget::on_browseFileOutputButton_clicked()
 {
     QFileDialog *dialog = new QFileDialog;
 

@@ -1,44 +1,9 @@
-#include "../../../include/cipher/vigenere/VigenereStandard.h"
+#include <include/cipher/vigenere/VigenereStandard.h>
 #include <algorithm>
-#include <sstream>
 
 VigenereStandardCipher::VigenereStandardCipher(std::string key) : VigenereCipher(key)
 {
 
-}
-
-void VigenereStandardCipher::setPlainText(std::string text)
-{
-    plainText = text;
-}
-
-void VigenereStandardCipher::setCipherText(std::string text)
-{
-    cipherText = text;
-}
-
-std::string VigenereStandardCipher::getPlainText()
-{
-    return plainText;
-}
-
-std::string VigenereStandardCipher::getCipherText(bool isSpaced)
-{
-    if (isSpaced) {
-        std::ostringstream stream;
-        stream << cipherText[0];
-        for (int i = 1; i < cipherText.size(); i++) {
-            if (i % 5 == 0) {
-                stream << " ";
-            }
-            stream << cipherText[i];
-        }
-
-        return stream.str();
-
-    } else {
-        return cipherText;
-    }
 }
 
 void VigenereStandardCipher::encrypt()

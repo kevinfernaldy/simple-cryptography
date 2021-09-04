@@ -16,8 +16,9 @@ public:
     static void checkCipherText(std::string);
     static void checkPlainText(std::string);
 
-    static bool isPlainTextAlphanumeric(std::string);
+    static void checkRunningKey(std::string, std::string);
 
+    static bool isPlainTextAlphanumeric(std::string);
     static bool isNotAlphanumeric(char c);
 };
 

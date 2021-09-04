@@ -10,11 +10,6 @@ class VigenereStandardCipher : public VigenereCipher
 public:
     VigenereStandardCipher(std::string);
 
-    void setCipherText(std::string);
-    void setPlainText(std::string);
-    std::string getCipherText(bool);
-    std::string getPlainText();
-
     void encrypt();
     void decrypt();
 

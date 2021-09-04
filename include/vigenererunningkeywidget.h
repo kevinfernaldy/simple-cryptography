@@ -1,27 +1,29 @@
-#ifndef VIGENERESTANDARDWIDGET_H
-#define VIGENERESTANDARDWIDGET_H
+#ifndef VIGENERERUNNINGKEYWIDGET_H
+#define VIGENERERUNNINGKEYWIDGET_H
 
 #include <QWidget>
-#include <include/cipher/vigenere/VigenereStandard.h>
+#include <include/cipher/vigenere/VigenereRunningKey.h>
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class VigenereStandardWidget; }
-QT_END_NAMESPACE
+namespace Ui {
+class VigenereRunningKeyWidget;
+}
 
-class VigenereStandardWidget : public QWidget
+class VigenereRunningKeyWidget : public QWidget
 {
     Q_OBJECT
+
 public:
-    explicit VigenereStandardWidget(QWidget *parent = nullptr);
-    ~VigenereStandardWidget();
+    explicit VigenereRunningKeyWidget(QWidget *parent = nullptr);
+    ~VigenereRunningKeyWidget();
+
 private:
     std::string readFile(std::string);
     void encrypt(std::string, std::string);
     void decrypt(std::string, std::string);
     void handleFileOutput(std::string, std::string);
 
-    Ui::VigenereStandardWidget *ui;
-    VigenereStandardCipher *cipher;
+    Ui::VigenereRunningKeyWidget *ui;
+    VigenereRunningKeyCipher *cipher;
 signals:
 
 private slots:
@@ -33,4 +35,4 @@ private slots:
     void on_browseFileOutputButton_clicked();
 };
 
-#endif // VIGENERESTANDARDWIDGET_H
+#endif // VIGENERERUNNINGKEYWIDGET_H

@@ -13,6 +13,11 @@ public:
     virtual void encrypt() = 0;
     virtual void decrypt() = 0;
 
+    void setPlainText(std::string);
+    void setCipherText(std::string);
+    std::string getPlainText();
+    std::string getCipherText(bool);
+
 protected:
     std::string cipherText;
     std::string plainText;
