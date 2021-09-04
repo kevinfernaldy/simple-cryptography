@@ -5,6 +5,11 @@
 #include <QDebug>
 
 #include <include/playfairwidget.h>
+#include <include/vigenere256asciiwidget.h>
+#include <include/vigenereautokeywidget.h>
+#include <include/vigenerefullwidget.h>
+#include <include/vigenererunningkeywidget.h>
+#include <include/vigenerestandardwidget.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -20,11 +25,11 @@ MainWindow::MainWindow(QWidget *parent)
     vigenereItem->appendRow(new QStandardItem("Standard, 26 Alphabets"));
     vigenereItem->appendRow(new QStandardItem("Full, 26 Alphabets"));
     vigenereItem->appendRow(new QStandardItem("Auto-key, 26 Alphabets"));
+    vigenereItem->appendRow(new QStandardItem("Running-key, 26 Alphabets"));
     vigenereItem->appendRow(new QStandardItem("Extended, 256 ASCII"));
     treeViewModel->appendRow(vigenereItem);
     treeViewModel->appendRow(new QStandardItem("Playfair Cipher"));
     treeViewModel->appendRow(new QStandardItem("Affine Cipher"));
-    treeViewModel->appendRow(new QStandardItem("Enigma Cipher"));
 
     ui->treeView->setModel(treeViewModel);
     ui->treeView->setHeaderHidden(true);
@@ -40,8 +45,49 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_treeView_clicked(const QModelIndex &index)
 {
-    QStandardItem *temp = treeViewModel->itemFromIndex(index);
+    if (index.parent().constInternalPointer() == nullptr && (index.row() > 0)) {
+        ui->widgetContainerLayout->removeWidget(currentWidget);
+        delete currentWidget;
 
-    qInfo() << temp->text();
+        switch (index.row()) {
+            case 1: {
+                currentWidget = new PlayfairWidget();
+                break;
+            }
+            case 2: {
+                break;
+            }
+        }
+
+        ui->widgetContainerLayout->addWidget(currentWidget);
+    } else {
+        ui->widgetContainerLayout->removeWidget(currentWidget);
+        delete currentWidget;
+
+        switch (index.row()) {
+            case 0: {
+                currentWidget = new VigenereStandardWidget();
+                break;
+            }
+            case 1: {
+                currentWidget = new VigenereFullWidget();
+                break;
+            }
+            case 2: {
+                currentWidget = new VigenereAutoKeyWidget();
+                break;
+            }
+            case 3: {
+                currentWidget = new VigenereRunningKeyWidget();
+                break;
+            }
+            case 4: {
+                currentWidget = new Vigenere256AsciiWidget();
+                break;
+            }
+        }
+
+        ui->widgetContainerLayout->addWidget(currentWidget);
+    }
 }
 
