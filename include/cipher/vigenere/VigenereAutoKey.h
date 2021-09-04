@@ -13,6 +13,7 @@ public:
     void encrypt();
     void decrypt();
 
+private:
     static const char CHAR_OFFSET = 0x41;
 };
 

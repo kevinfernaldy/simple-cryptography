@@ -12,8 +12,8 @@ set(CMAKE_AUTOUIC_SEARCH_PATHS view/)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools Sql REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools Sql REQUIRED)
 
 set(TS_FILES ClassicCryptography_id_ID.ts)
 
@@ -22,24 +22,32 @@ set(PROJECT_SOURCES
         include/vigenerestandardwidget.h
         include/vigenererunningkeywidget.h
         include/vigenereautokeywidget.h
+        include/vigenerefullwidget.h
+        include/vigenerefulltablewidget.h
         src/main.cpp
         src/mainwindow.cpp
         src/vigenerestandardwidget.cpp
         src/vigenererunningkeywidget.cpp
         src/vigenereautokeywidget.cpp
+        src/vigenerefullwidget.cpp
+        src/vigenerefulltablewidget.cpp
         view/mainwindow.ui
         view/vigenerestandardwidget.ui
         view/vigenererunningkeywidget.ui
         view/vigenereautokeywidget.ui
+        view/vigenerefullwidget.ui
+        view/vigenerefulltablewidget.ui
         include/cipher/vigenere/Vigenere.h
         include/cipher/vigenere/VigenereStandard.h
         include/cipher/vigenere/VigenereRunningKey.h
         include/cipher/vigenere/VigenereAutoKey.h
+        include/cipher/vigenere/VigenereFull.h
         include/cipher/util.h
         src/cipher/vigenere/VigenereStandard.cpp
         src/cipher/vigenere/Vigenere.cpp
         src/cipher/vigenere/VigenereRunningKey.cpp
         src/cipher/vigenere/VigenereAutoKey.cpp
+        src/cipher/vigenere/VigenereFull.cpp
         src/cipher/util.cpp
         ${TS_FILES}
 )
@@ -71,7 +79,7 @@ else()
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 endif()
 
-target_link_libraries(ClassicCryptography PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(ClassicCryptography PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql)
 
 set_target_properties(ClassicCryptography PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

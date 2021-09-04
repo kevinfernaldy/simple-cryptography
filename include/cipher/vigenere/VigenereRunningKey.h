@@ -1,5 +1,5 @@
-#ifndef VIGENERERUNNING_H
-#define VIGENERERUNNING_H
+#ifndef VIGENERERUNNINGKEY_H
+#define VIGENERERUNNINGKEY_H
 
 #include "Vigenere.h"
 
@@ -13,6 +13,7 @@ public:
     void encrypt();
     void decrypt();
 
+private:
     static const char CHAR_OFFSET = 0x41;
 };
 
