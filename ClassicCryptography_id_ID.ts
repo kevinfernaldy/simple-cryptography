@@ -286,6 +286,77 @@
     </message>
 </context>
 <context>
+    <name>Vigenere256AsciiWidget</name>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="57"/>
+        <source>Vigenère Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="70"/>
+        <source>Extended, 256 ASCII</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="105"/>
+        <source>Text from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="149"/>
+        <source> as </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="186"/>
+        <source>Key from</source>
+        <oldsource>Key</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="199"/>
+        <location filename="view/vigenere256asciiwidget.ui" line="215"/>
+        <location filename="view/vigenere256asciiwidget.ui" line="232"/>
+        <source>Browse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="239"/>
+        <source>File input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="222"/>
+        <source>File output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="273"/>
+        <source>Plaintext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="307"/>
+        <source>Ciphertext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="346"/>
+        <source>Encrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenere256asciiwidget.ui" line="359"/>
+        <source>Decrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>VigenereAutoKeyWidget</name>
     <message>
         <location filename="view/vigenereautokeywidget.ui" line="14"/>
@@ -373,11 +444,6 @@
     </message>
     <message>
         <location filename="view/vigenerefulltabledialog.ui" line="38"/>
-        <source>Regenerate Table</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="view/vigenerefulltabledialog.ui" line="45"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
