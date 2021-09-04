@@ -23,6 +23,86 @@
     </message>
 </context>
 <context>
+    <name>VigenereAutoKeyWidget</name>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="57"/>
+        <source>Vigenère Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="70"/>
+        <source>Auto-Key, 26 Alphabet</source>
+        <oldsource>Standard, 26 Alphabet</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="105"/>
+        <source>Text from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="149"/>
+        <source> as </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="205"/>
+        <source>File input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="212"/>
+        <location filename="view/vigenereautokeywidget.ui" line="229"/>
+        <source>Browse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="219"/>
+        <source>File output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="248"/>
+        <source>Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="281"/>
+        <source>Plaintext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="299"/>
+        <source>Whitespaces, symbols, etc. have been removed from your plaintext.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="333"/>
+        <source>Ciphertext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="349"/>
+        <source>Render ciphertext without spaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="379"/>
+        <source>Encrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/vigenereautokeywidget.ui" line="386"/>
+        <source>Decrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>VigenereRunningKeyWidget</name>
     <message>
         <location filename="view/vigenererunningkeywidget.ui" line="14"/>
@@ -37,7 +117,6 @@
     <message>
         <location filename="view/vigenererunningkeywidget.ui" line="70"/>
         <source>Running Key, 26 Alphabet</source>
-        <oldsource>Auto-Key, 26 Alphabet</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

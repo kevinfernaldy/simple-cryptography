@@ -21,20 +21,25 @@ set(PROJECT_SOURCES
         include/mainwindow.h
         include/vigenerestandardwidget.h
         include/vigenererunningkeywidget.h
+        include/vigenereautokeywidget.h
         src/main.cpp
         src/mainwindow.cpp
         src/vigenerestandardwidget.cpp
         src/vigenererunningkeywidget.cpp
+        src/vigenereautokeywidget.cpp
         view/mainwindow.ui
         view/vigenerestandardwidget.ui
         view/vigenererunningkeywidget.ui
+        view/vigenereautokeywidget.ui
         include/cipher/vigenere/Vigenere.h
         include/cipher/vigenere/VigenereStandard.h
         include/cipher/vigenere/VigenereRunningKey.h
+        include/cipher/vigenere/VigenereAutoKey.h
         include/cipher/util.h
         src/cipher/vigenere/VigenereStandard.cpp
         src/cipher/vigenere/Vigenere.cpp
         src/cipher/vigenere/VigenereRunningKey.cpp
+        src/cipher/vigenere/VigenereAutoKey.cpp
         src/cipher/util.cpp
         ${TS_FILES}
 )
