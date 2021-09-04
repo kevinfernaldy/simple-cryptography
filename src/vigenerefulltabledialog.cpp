@@ -1,12 +1,12 @@
-#include <include/vigenerefulltablewidget.h>
-#include "ui_vigenerefulltablewidget.h"
+#include <include/vigenerefulltabledialog.h>
+#include "ui_vigenerefulltabledialog.h"
 
 #include <cstring>
 #include <iostream>
 
-VigenereFullTableWidget::VigenereFullTableWidget(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::VigenereFullTableWidget)
+VigenereFullTableDialog::VigenereFullTableDialog(QDialog *parent) :
+    QDialog(parent),
+    ui(new Ui::VigenereFullTableDialog)
 {
     ui->setupUi(this);
 
@@ -16,13 +16,13 @@ VigenereFullTableWidget::VigenereFullTableWidget(QWidget *parent) :
     model = nullptr;
 }
 
-VigenereFullTableWidget::~VigenereFullTableWidget()
+VigenereFullTableDialog::~VigenereFullTableDialog()
 {
     delete model;
     delete ui;
 }
 
-void VigenereFullTableWidget::setAlphabetTable(std::vector<std::vector<char>> table)
+void VigenereFullTableDialog::setAlphabetTable(std::vector<std::vector<char>> table)
 {
     if (model != nullptr) delete model;
 
@@ -96,7 +96,7 @@ void VigenereFullTableWidget::setAlphabetTable(std::vector<std::vector<char>> ta
     ui->tableAlphabetView->setModel(model);
 }
 
-void VigenereFullTableWidget::on_backButton_clicked()
+void VigenereFullTableDialog::on_backButton_clicked()
 {
     close();
 }

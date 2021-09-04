@@ -23,20 +23,20 @@ set(PROJECT_SOURCES
         include/vigenererunningkeywidget.h
         include/vigenereautokeywidget.h
         include/vigenerefullwidget.h
-        include/vigenerefulltablewidget.h
+        include/vigenerefulltabledialog.h
         src/main.cpp
         src/mainwindow.cpp
         src/vigenerestandardwidget.cpp
         src/vigenererunningkeywidget.cpp
         src/vigenereautokeywidget.cpp
         src/vigenerefullwidget.cpp
-        src/vigenerefulltablewidget.cpp
+        src/vigenerefulltabledialog.cpp
         view/mainwindow.ui
         view/vigenerestandardwidget.ui
         view/vigenererunningkeywidget.ui
         view/vigenereautokeywidget.ui
         view/vigenerefullwidget.ui
-        view/vigenerefulltablewidget.ui
+        view/vigenerefulltabledialog.ui
         include/cipher/vigenere/Vigenere.h
         include/cipher/vigenere/VigenereStandard.h
         include/cipher/vigenere/VigenereRunningKey.h

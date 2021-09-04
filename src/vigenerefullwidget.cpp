@@ -7,7 +7,7 @@
 
 #include <include/cipher/util.h>
 
-#include <include/vigenerefulltablewidget.h>
+#include <include/vigenerefulltabledialog.h>
 
 VigenereFullWidget::VigenereFullWidget(QWidget *parent) : QWidget(parent), ui(new Ui::VigenereFullWidget)
 {
@@ -258,11 +258,13 @@ void VigenereFullWidget::on_viewTableButton_clicked()
         cipher = new VigenereFullCipher("PLACEHOLDER");
     }
 
-    VigenereFullTableWidget *widget = new VigenereFullTableWidget();
+    VigenereFullTableDialog *widget = new VigenereFullTableDialog();
 
     widget->setAlphabetTable(cipher->getAlphabetArray());
 
-    widget->show();
+    widget->exec();
+
+    delete widget;
 }
 
 

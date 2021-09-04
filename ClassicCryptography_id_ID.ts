@@ -25,262 +25,262 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="36"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="36"/>
         <source>PT_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="37"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="37"/>
         <source>PT_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="38"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="38"/>
         <source>PT_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="39"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="39"/>
         <source>PT_D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="40"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="40"/>
         <source>PT_E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="41"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="41"/>
         <source>PT_F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="42"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="42"/>
         <source>PT_G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="43"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="43"/>
         <source>PT_H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="44"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="44"/>
         <source>PT_I</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="45"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="45"/>
         <source>PT_J</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="46"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="46"/>
         <source>PT_K</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="47"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="47"/>
         <source>PT_L</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="48"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="48"/>
         <source>PT_M</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="49"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="49"/>
         <source>PT_N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="50"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="50"/>
         <source>PT_O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="51"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="51"/>
         <source>PT_P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="52"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="52"/>
         <source>PT_Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="53"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="53"/>
         <source>PT_R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="54"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="54"/>
         <source>PT_S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="55"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="55"/>
         <source>PT_T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="56"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="56"/>
         <source>PT_U</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="57"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="57"/>
         <source>PT_V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="58"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="58"/>
         <source>PT_W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="59"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="59"/>
         <source>PT_X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="60"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="60"/>
         <source>PT_Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="61"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="61"/>
         <source>PT_Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="63"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="63"/>
         <source>KEY_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="64"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="64"/>
         <source>KEY_B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="65"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="65"/>
         <source>KEY_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="66"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="66"/>
         <source>KEY_D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="67"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="67"/>
         <source>KEY_E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="68"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="68"/>
         <source>KEY_F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="69"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="69"/>
         <source>KEY_G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="70"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="70"/>
         <source>KEY_H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="71"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="71"/>
         <source>KEY_I</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="72"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="72"/>
         <source>KEY_J</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="73"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="73"/>
         <source>KEY_K</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="74"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="74"/>
         <source>KEY_L</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="75"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="75"/>
         <source>KEY_M</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="76"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="76"/>
         <source>KEY_N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="77"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="77"/>
         <source>KEY_O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="78"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="78"/>
         <source>KEY_P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="79"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="79"/>
         <source>KEY_Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="80"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="80"/>
         <source>KEY_R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="81"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="81"/>
         <source>KEY_S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="82"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="82"/>
         <source>KEY_T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="83"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="83"/>
         <source>KEY_U</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="84"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="84"/>
         <source>KEY_V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="85"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="85"/>
         <source>KEY_W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="86"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="86"/>
         <source>KEY_X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="87"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="87"/>
         <source>KEY_Y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vigenerefulltablewidget.cpp" line="88"/>
+        <location filename="src/vigenerefulltabledialog.cpp" line="88"/>
         <source>KEY_Z</source>
         <translation type="unfinished"></translation>
     </message>
@@ -365,19 +365,19 @@
     </message>
 </context>
 <context>
-    <name>VigenereFullTableWidget</name>
+    <name>VigenereFullTableDialog</name>
     <message>
-        <location filename="view/vigenerefulltablewidget.ui" line="14"/>
+        <location filename="view/vigenerefulltabledialog.ui" line="14"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="view/vigenerefulltablewidget.ui" line="38"/>
+        <location filename="view/vigenerefulltabledialog.ui" line="38"/>
         <source>Regenerate Table</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="view/vigenerefulltablewidget.ui" line="45"/>
+        <location filename="view/vigenerefulltabledialog.ui" line="45"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
