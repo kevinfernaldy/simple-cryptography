@@ -4,6 +4,7 @@
 #include <QVBoxLayout>
 #include <QDebug>
 
+#include <include/affinewidget.h>
 #include <include/playfairwidget.h>
 #include <include/vigenere256asciiwidget.h>
 #include <include/vigenereautokeywidget.h>
@@ -55,6 +56,7 @@ void MainWindow::on_treeView_clicked(const QModelIndex &index)
                 break;
             }
             case 2: {
+                currentWidget = new AffineWidget();
                 break;
             }
         }

@@ -2,6 +2,85 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="id_ID">
 <context>
+    <name>AffineWidget</name>
+    <message>
+        <location filename="view/affinewidget.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="57"/>
+        <source>Affine Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="70"/>
+        <source>256 ASCII</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="99"/>
+        <source>Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="108"/>
+        <source>a </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="134"/>
+        <source>b </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="159"/>
+        <source>Text from</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="203"/>
+        <source> as </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="245"/>
+        <location filename="view/affinewidget.ui" line="262"/>
+        <source>Browse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="252"/>
+        <source>File output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="269"/>
+        <source>File input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="303"/>
+        <source>Plaintext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="337"/>
+        <source>Ciphertext</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="376"/>
+        <source>Encrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="view/affinewidget.ui" line="389"/>
+        <source>Decrypt</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Form</name>
     <message>
         <location filename="view/keyboardencryption.ui" line="14"/>

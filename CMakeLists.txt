@@ -26,6 +26,7 @@ set(PROJECT_SOURCES
         include/vigenerefulltabledialog.h
         include/vigenere256asciiwidget.h
         include/playfairwidget.h
+        include/affinewidget.h
         src/main.cpp
         src/mainwindow.cpp
         src/vigenerestandardwidget.cpp
@@ -35,6 +36,7 @@ set(PROJECT_SOURCES
         src/vigenerefulltabledialog.cpp
         src/vigenere256asciiwidget.cpp
         src/playfairwidget.cpp
+        src/affinewidget.cpp
         view/mainwindow.ui
         view/vigenerestandardwidget.ui
         view/vigenererunningkeywidget.ui
@@ -43,6 +45,7 @@ set(PROJECT_SOURCES
         view/vigenerefulltabledialog.ui
         view/vigenere256asciiwidget.ui
         view/playfairwidget.ui
+        view/affinewidget.ui
         include/cipher/vigenere/Vigenere.h
         include/cipher/vigenere/VigenereStandard.h
         include/cipher/vigenere/VigenereRunningKey.h
@@ -50,6 +53,7 @@ set(PROJECT_SOURCES
         include/cipher/vigenere/VigenereFull.h
         include/cipher/vigenere/Vigenere256ASCII.h
         include/cipher/PlayfairCipher.h
+        include/cipher/AffineCipher.h
         include/cipher/util.h
         src/cipher/vigenere/VigenereStandard.cpp
         src/cipher/vigenere/Vigenere.cpp
@@ -58,6 +62,7 @@ set(PROJECT_SOURCES
         src/cipher/vigenere/VigenereFull.cpp
         src/cipher/vigenere/Vigenere256ASCII.cpp
         src/cipher/PlayfairCipher.cpp
+        src/cipher/AffineCipher.cpp
         src/cipher/util.cpp
         ${TS_FILES}
 )

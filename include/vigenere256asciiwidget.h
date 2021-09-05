@@ -18,19 +18,12 @@ public:
 
 private slots:
     void on_sourceComboBox_currentIndexChanged(int index);
-
     void on_browseFileInput_clicked();
-
     void on_browseFileOutput_clicked();
-
     void on_encryptButton_clicked();
-
     void on_decryptButton_clicked();
-
     void on_browseKey_clicked();
-
     void on_keySourceComboBox_currentIndexChanged(int index);
-
     void on_textTypeComboBox_currentIndexChanged(int index);
 
 private:

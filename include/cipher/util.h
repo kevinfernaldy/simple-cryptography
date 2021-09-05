@@ -19,7 +19,9 @@ public:
     static void checkRunningKey(std::string, std::string);
 
     static bool isPlainTextAlphanumeric(std::string);
-    static bool isNotAlphanumeric(char c);
+    static bool isNotAlphanumeric(char);
+
+    static bool isRelativelyPrime(int, int);
 };
 
 #endif // CIPHERUTIL_H
